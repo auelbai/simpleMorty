@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/characterFragment">
+    <fragment
+        android:id="@+id/allCharactersFragment"
+        android:name="com.example.simplemorty.presentation.fragments.AllCharactersFragment"
+        android:label="AllCharactersFragment" >
+        <action
+            android:id="@+id/action_allCharactersFragment_to_characterFragment"
+            app:destination="@id/characterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.example.simplemorty.presentation.fragments.CharacterFragment"
+        android:label="CharacterFragment"/>
+    <fragment
+        android:id="@+id/savedCharactersFragment"
+        android:name="com.example.simplemorty.presentation.fragments.SavedCharactersFragment"
+        android:label="SavedCharactersFragment" >
+        <action
+            android:id="@+id/action_savedCharactersFragment_to_characterFragment"
+            app:destination="@id/characterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchCharacterFragment"
+        android:name="com.example.simplemorty.presentation.fragments.SearchCharacterFragment"
+        android:label="SearchCharacterFragment" >
+        <action
+            android:id="@+id/action_searchCharacterFragment_to_characterFragment"
+            app:destination="@id/characterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>

@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/character_img"
         app:layout_constraintStart_toStartOf="@+id/character_status"
         android:background="@color/design_default_color_secondary"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         />
 
     <TextView

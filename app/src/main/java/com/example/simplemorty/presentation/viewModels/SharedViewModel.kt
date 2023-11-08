@@ -1,4 +1,4 @@
-package com.example.simplemorty.presentation
+package com.example.simplemorty.presentation.viewModels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -33,7 +33,8 @@ class CharacterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.refreshCharacter(23)
+        val characterId = arguments?.getInt("characterId") ?: -1
+        viewModel.refreshCharacter(characterId)
         viewModel.characterByIdLD.observe(viewLifecycleOwner) { response ->
             if (response == null) {
                 Log.d("MainActivity", "response not Successful")

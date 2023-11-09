@@ -1,4 +1,4 @@
-package com.example.simplemorty.network
+package com.example.simplemorty.data.network
 
 import retrofit2.Response
 import java.lang.Exception

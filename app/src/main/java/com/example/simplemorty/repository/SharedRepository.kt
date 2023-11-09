@@ -1,8 +1,8 @@
 package com.example.simplemorty.repository
 
-import com.example.simplemorty.model.GetCharacterByIdResponse
-import com.example.simplemorty.model.GetCharactersPageResponse
-import com.example.simplemorty.network.NetworkLayer
+import com.example.simplemorty.data.network.model.GetCharacterByIdResponse
+import com.example.simplemorty.data.network.model.GetCharactersPageResponse
+import com.example.simplemorty.data.network.NetworkLayer
 
 class SharedRepository {
 

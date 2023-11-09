@@ -18,7 +18,8 @@
     <fragment
         android:id="@+id/characterFragment"
         android:name="com.example.simplemorty.presentation.fragments.CharacterFragment"
-        android:label="CharacterFragment"/>
+        android:label="CharacterFragment">
+    </fragment>
     <fragment
         android:id="@+id/savedCharactersFragment"
         android:name="com.example.simplemorty.presentation.fragments.SavedCharactersFragment"

@@ -1,7 +1,7 @@
-package com.example.simplemorty.network
+package com.example.simplemorty.data.network
 
-import com.example.simplemorty.model.GetCharacterByIdResponse
-import com.example.simplemorty.model.GetCharactersPageResponse
+import com.example.simplemorty.data.network.model.GetCharacterByIdResponse
+import com.example.simplemorty.data.network.model.GetCharactersPageResponse
 import retrofit2.Response
 
 class ApiClient(

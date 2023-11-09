@@ -2,7 +2,7 @@ package com.example.simplemorty.presentation
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.simplemorty.model.GetCharacterByIdResponse
+import com.example.simplemorty.data.network.model.GetCharacterByIdResponse
 import com.example.simplemorty.repository.SharedRepository
 import okio.IOException
 import retrofit2.HttpException

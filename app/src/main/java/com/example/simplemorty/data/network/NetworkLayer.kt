@@ -1,4 +1,4 @@
-package com.example.simplemorty.network
+package com.example.simplemorty.data.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.simplemorty.R
 import com.example.simplemorty.databinding.FragmentCharacterBinding
-import com.example.simplemorty.presentation.viewModels.SharedViewModel
+import com.example.simplemorty.presentation.viewModels.CharacterFragmentViewModel
 
 
 class CharacterFragment : Fragment() {
@@ -19,7 +19,7 @@ class CharacterFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel by lazy {
-        ViewModelProvider(this)[SharedViewModel::class.java]
+        ViewModelProvider(this)[CharacterFragmentViewModel::class.java]
     }
 
     override fun onCreateView(
@@ -50,6 +50,9 @@ class CharacterFragment : Fragment() {
                     genderIcon.setImageResource(R.drawable.ic_male)
                 } else {
                     genderIcon.setImageResource(R.drawable.ic_female)
+                }
+                fab.setOnClickListener {
+                    viewModel.addCharacter(response)
                 }
             }
         }

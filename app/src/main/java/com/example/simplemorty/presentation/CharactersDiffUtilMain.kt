@@ -3,7 +3,7 @@ package com.example.simplemorty.presentation
 import androidx.recyclerview.widget.DiffUtil
 import com.example.simplemorty.data.network.model.GetCharacterByIdResponse
 
-class CharactersDiffUtil: DiffUtil.ItemCallback<GetCharacterByIdResponse>() {
+class CharactersDiffUtilMain: DiffUtil.ItemCallback<GetCharacterByIdResponse>() {
     override fun areItemsTheSame(
         oldItem: GetCharacterByIdResponse,
         newItem: GetCharacterByIdResponse

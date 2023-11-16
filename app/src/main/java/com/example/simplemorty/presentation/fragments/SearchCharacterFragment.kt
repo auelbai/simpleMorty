@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.simplemorty.databinding.FragmentSearchCharacterBinding
-import com.example.simplemorty.presentation.viewModels.SharedViewModel
+import com.example.simplemorty.presentation.viewModels.CharacterFragmentViewModel
 
 class SearchCharacterFragment: Fragment() {
     private var _binding: FragmentSearchCharacterBinding? = null
     private val binding get() = _binding!!
 
     private val viewModel by lazy {
-        ViewModelProvider(this)[SharedViewModel::class.java]
+        ViewModelProvider(this)[CharacterFragmentViewModel::class.java]
     }
 
     override fun onCreateView(

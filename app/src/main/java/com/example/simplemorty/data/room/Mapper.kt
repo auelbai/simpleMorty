@@ -31,6 +31,23 @@ class Mapper {
         )
     }
 
+    fun mapListDbModelToListEntity(dbModelList: List<GetCharacterByIdDbModel>) : List<CharacterInfo> {
+        return dbModelList.map {
+            mapCharacterInfoDbModelToCharacterInfoEntity(it)
+        }
+    }
 
-
+    fun mapCharacterInfoEntityToCharacterInfoDbModel(
+        characterResponse: CharacterInfo
+    ): GetCharacterByIdDbModel {
+        return GetCharacterByIdDbModel(
+            gender = characterResponse.gender,
+            id = characterResponse.id,
+            image = characterResponse.image,
+            name = characterResponse.name,
+            origin = characterResponse.origin,
+            species = characterResponse.species,
+            status = characterResponse.status
+        )
+    }
 }
